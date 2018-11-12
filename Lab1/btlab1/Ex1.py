@@ -19,6 +19,6 @@ content = template.replace("{{sick}}", stickness).replace('{{symptom}}',symptom)
 message = Message('Đơn xin nghỉ học', to='khains0000@gmail.com', html = template)
 
 x = datetime.datetime.now().strftime("%I:%M %p")
-
-if x == "07:00 AM":
-    gmail.send(message)
+while True:
+    if x == "07:00 AM":
+        gmail.send(message)
